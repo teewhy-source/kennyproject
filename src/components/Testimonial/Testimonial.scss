@@ -1,0 +1,27 @@
+.testimonial {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 20px;
+  
+    .testimonial-image {
+      margin-bottom: 20px;
+      img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+    }
+  
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+  
+    .testimonial-name {
+      font-weight: bold;
+    }
+  }
+  

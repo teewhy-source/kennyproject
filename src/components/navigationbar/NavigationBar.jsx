@@ -27,7 +27,7 @@ const NavigationBar = () => {
           Price
         </Link>
         <Link to="/portfolio" onClick={toggleMenu}>
-          Portfolio
+          Testimonials
         </Link>
         <Link to="/gallery" onClick={toggleMenu}>
           Gallery

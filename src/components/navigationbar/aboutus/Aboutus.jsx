@@ -36,8 +36,8 @@ const Aboutus = () => {
       <Navigationbar />
       <section className="hero-section">
         <p>
-          PHOTOGRAPHER, VIDEOGRAPHER AND PLANNER FOR INTENTIONAL ELOPEMENTS IN
-          CT, MA, NERI & V
+        PHOTOGRAPHER, VIDEOGRAPHER, AND PLANNER FOR INTIMATE ELOPEMENTS ACROSS LAGOS, ABUJA, IBADAN, AND PORT HARCOURT.
+
         </p>
       </section>
       <section className="story">

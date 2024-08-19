@@ -1,0 +1,21 @@
+.testimonials-section {
+//    padding-top: 6rem;
+    padding: 50px 20px;
+    background-image: url('https://images6.alphacoders.com/106/1065908.jpg'); // replace with your background image URL
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  
+    .testimonials-container {
+        margin-top: 4rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
