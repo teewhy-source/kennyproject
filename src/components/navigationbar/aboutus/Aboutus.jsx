@@ -33,7 +33,7 @@ const Aboutus = () => {
 
   return (
     <div>
-      <Navigationbar />
+      {/* <Navigationbar /> */}
       <section className="hero-section">
         <p>
         PHOTOGRAPHER, VIDEOGRAPHER, AND PLANNER FOR INTIMATE ELOPEMENTS ACROSS LAGOS, ABUJA, IBADAN, AND PORT HARCOURT.

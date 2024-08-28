@@ -11,8 +11,8 @@ $accent-color: #f9c74f;
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
-
+        position: initial;
+        
         .hero-text {
             text-align: center;
             color: $primary-color;

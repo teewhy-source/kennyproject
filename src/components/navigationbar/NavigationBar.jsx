@@ -1,42 +1,34 @@
-import React, { useState } from "react";
-// import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from "react-router-dom";
-import "./navigation.styles.scss";
+import { useRef } from "react";
+import { FcCameraIdentification,FcCamera } from "react-icons/fc";
+import { MdFlipCameraAndroid } from "react-icons/md";
+import "../navigationbar/navigation.css";
 
 const NavigationBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const navref = useRef();
+  
+  const shownavbar = () => {
+    navref.current.classList.toggle("responsive_nav");
   };
 
   return (
-    <nav className="navbar">
-      <div className="navbar-content">
-        <div className="navbar-logo">
-          <Link to="/">
-            <h1>SHOT_BY_KENNY</h1>
-          </Link>
-        </div>
-      </div>
-      <div className={`navbar-links ${isOpen ? "open" : ""}`}>
-        <Link to="/aboutus" onClick={toggleMenu}>
-          About
-        </Link>
-        <Link to="/price" onClick={toggleMenu}>
-          Price
-        </Link>
-        <Link to="/portfolio" onClick={toggleMenu}>
-          Testimonials
-        </Link>
-        <Link to="/gallery" onClick={toggleMenu}>
-          Gallery
-        </Link>
-        <Link to="/contact" onClick={toggleMenu}>
-          Contact
-        </Link>
-      </div>
-    </nav>
+    <header>
+      <h3>ShotbyKenny <br /> <FcCamera /> <FcCamera /> <FcCamera /> <FcCamera /> <FcCamera />
+      </h3>
+      <nav ref={navref}>
+        <a href="/home">Home</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/portfolio">Testimonial</a>
+        <a href="price">Price</a>
+        <a href="contact">Contact Us</a>
+        <a href="/aboutus">About Us</a>
+        <button onClick={shownavbar} className="nav-btn nav-close-btn">
+          <FcCameraIdentification />
+        </button>
+      </nav>
+      <button onClick={shownavbar} className="nav-btn">
+        <MdFlipCameraAndroid />
+      </button>
+    </header>
   );
 };
 
