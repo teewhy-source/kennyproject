@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/homepage/Home';
 import Aboutus from './components/navigationbar/aboutus/Aboutus';
 import Price from './components/navigationbar/price/Price';
@@ -12,7 +12,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="home" element={<Home />} />
         <Route element={<Layout />}>
           <Route path="aboutus" element={<Aboutus />} />
           <Route path="price" element={<Price />} />
@@ -25,4 +26,4 @@ const App = () => {
   );
 };
 
-export default App; // Ensure this export is present
+export default App;
