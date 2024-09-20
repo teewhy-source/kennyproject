@@ -64,7 +64,7 @@ const Aboutus = () => {
               the little details that make the day uniquely theirs. My goal as
               your elopement professional is to help bring that vision to life.
             </p>
-            <p>
+            {/* <p>
               With extensive knowledge of venues and locations ideal for small
               weddings and elopements across Nigeria, and a network of trusted
               vendors to meet the unique needs of my clients, I am the ideal
@@ -80,7 +80,7 @@ const Aboutus = () => {
               From crafting beautifully edited highlight reels to curating
               stunning photo albums that tell the full story of your day, I
               ensure that every moment is preserved and celebrated.
-            </p>
+            </p> */}
             <p>
               I also offer consultation services for couples who need guidance
               on planning their elopement or small wedding. Whether you're
